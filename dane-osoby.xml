@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer>
+    <age>24</age>
+    <city>Lublin</city>
+    <contacts>
+        <contact>
+            <contact>jkowal@gmail.com</contact>
+            <type>1</type>
+        </contact>
+        <contact>
+            <contact>777222333</contact>
+            <type>2</type>
+        </contact>
+    </contacts>
+    <name>Jan</name>
+    <surname>Kowalski</surname>
+</customer>
+
