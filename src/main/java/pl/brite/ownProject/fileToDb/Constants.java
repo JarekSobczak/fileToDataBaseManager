@@ -2,10 +2,10 @@ package pl.brite.ownProject.fileToDb;
 
 public class Constants {
 
-    public static final String URL = "jdbc:mysql://localhost:3306/file_to_db?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true";
+    public static final String URL = "tu wpisz adres do bazy danych mySQL";
 
-    public static final String USERNAME = "root";
-    public static final String PASSWORD = "Iceicle44";
+    public static final String USERNAME = "TU wpisz swój login do db";
+    public static final String PASSWORD = "tu swoje HASŁO";
 
     public static final String CREATE_CONTACT_TABLE = "CREATE TABLE IF NOT EXISTS contact(" +
             "id INT AUTO_INCREMENT," +
