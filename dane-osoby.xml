@@ -4,11 +4,11 @@
     <city>Lublin</city>
     <contacts>
         <contact>
-            <contact>jkowal@gmail.com</contact>
+            <contact_data>jkowal@gmail.com</contact_data>
             <type>1</type>
         </contact>
         <contact>
-            <contact>777222333</contact>
+            <contact_data>777222333</contact_data>
             <type>2</type>
         </contact>
     </contacts>

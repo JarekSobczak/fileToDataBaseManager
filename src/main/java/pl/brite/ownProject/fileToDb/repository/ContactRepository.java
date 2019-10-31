@@ -20,7 +20,7 @@ public class ContactRepository {
 
         ps.setInt(1, idCustomer);
         ps.setInt(2, contact.getType());
-        ps.setString(3, contact.getContact());
+        ps.setString(3, contact.getContact_data());
 
         ps.execute();
     }

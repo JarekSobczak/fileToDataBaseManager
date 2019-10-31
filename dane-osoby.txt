@@ -1,2 +1,2 @@
-name,surname,age,city,contacts.element.0.contact,contacts.element.0.type,contacts.element.1.contact,contacts.element.1.type
-Kowalski,Jan,24,Lublin,jkowal@gmail.com,1,777222333,2
+name,surname,age,city,contacts.contact.0.contact_data,contacts.contact.0.type,contacts.contact.1.contact_data,contacts.contact.1.type
+Jan,Kowalski,24,Lublin,jkowal@gmail.com,1,777222333,2

@@ -18,7 +18,9 @@ public class CustomerRepository {
 
         ps.setString(1, customer.getName());
         ps.setString(2, customer.getSurname());
-        ps.setInt(3, customer.getAge());
+        ps.setString(3, customer.getAge());
+        ps.setString(4, customer.getCity());
+
 
         ps.executeUpdate();
         ResultSet rs = ps.getGeneratedKeys();
