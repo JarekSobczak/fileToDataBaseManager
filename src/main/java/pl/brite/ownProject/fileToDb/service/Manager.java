@@ -9,18 +9,21 @@ import java.util.Scanner;
 
 public class Manager {
 
+    private List<Customer> customers = new ArrayList<>();
+    private XmlService xmlService = new XmlService(customers);
+    private CsvService csvService = new CsvService(customers);
+    private DbService dbService = new DbService();
+
     public void writeFromFileToDb() {
 
         Scanner sc = new Scanner(System.in);
-        List<Customer> customers = new ArrayList<>();
+
         System.out.println("Enter data file path ...");
         String filePath = sc.nextLine();
         File file = new File(filePath);
         String type = filePath.trim().substring(filePath.length() - 3, filePath.length());
 
-        XmlService xmlService = new XmlService(customers);
-        CsvService csvService = new CsvService(customers);
-        DbService dbService = new DbService();
+
 
         if (type.equals("xml")) {
             xmlService.mapXml(file);
