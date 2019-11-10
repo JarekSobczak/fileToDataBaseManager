@@ -9,14 +9,14 @@ import java.util.List;
 class XmlService {
 
     private List<Customer> customers;
-    private File file;
 
-    XmlService(List<Customer> customers, File file) {
+
+    XmlService(List<Customer> customers) {
         this.customers = customers;
-        this.file = file;
+
     }
 
-    void mapXml() {
+    void mapXml(File file) {
         XmlMapper xmlm = new XmlMapper();
         try {
             customers.add(xmlm.readValue(file, Customer.class));

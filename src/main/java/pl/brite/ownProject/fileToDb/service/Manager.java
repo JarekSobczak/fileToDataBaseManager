@@ -18,16 +18,16 @@ public class Manager {
         File file = new File(filePath);
         String type = filePath.trim().substring(filePath.length() - 3, filePath.length());
 
-        XmlService xmlService = new XmlService(customers, file);
-        CsvService csvService = new CsvService(customers, file);
+        XmlService xmlService = new XmlService(customers);
+        CsvService csvService = new CsvService(customers);
         DbService dbService = new DbService();
 
         if (type.equals("xml")) {
-            xmlService.mapXml();
+            xmlService.mapXml(file);
 
         }
         if (type.equals("txt")) {
-            csvService.mapCsv();
+            csvService.mapCsv(file);
         }
         dbService.writeToDB(customers);
     }

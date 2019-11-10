@@ -12,14 +12,12 @@ import java.util.*;
 class CsvService {
 
     private List<Customer> customers;
-    private File file;
 
-    CsvService(List<Customer> customers, File file) {
+    CsvService(List<Customer> customers) {
         this.customers = customers;
-        this.file = file;
     }
 
-    void mapCsv() {
+    void mapCsv(File file) {
         List<Map<String, String>> response = new LinkedList<Map<String, String>>();
 
         CsvMapper mapper = new CsvMapper();
