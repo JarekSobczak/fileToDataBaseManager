@@ -19,7 +19,8 @@ class XmlService {
     void mapXml(File file) {
         XmlMapper xmlm = new XmlMapper();
         try {
-            customers.add(xmlm.readValue(file, Customer.class));
+            customers.addAll(xmlm.readValue(file, new com.fasterxml.jackson.core.type.TypeReference<List<Customer>>(){
+            }));
         } catch (
                 IOException ex) {
             ex.printStackTrace();

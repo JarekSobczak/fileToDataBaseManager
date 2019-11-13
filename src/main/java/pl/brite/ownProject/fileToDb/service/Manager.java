@@ -12,6 +12,7 @@ public class Manager {
     private List<Customer> customers = new ArrayList<>();
     private XmlService xmlService = new XmlService(customers);
     private CsvService csvService = new CsvService(customers);
+    private JsonService jsonService = new JsonService(customers);
     private DbService dbService = new DbService();
 
     public void writeFromFileToDb() {
@@ -31,6 +32,9 @@ public class Manager {
         }
         if (type.equals("txt")) {
             csvService.mapCsv(file);
+        }
+        if (type.equals("son")){
+            jsonService.mapJson(file);
         }
         dbService.writeToDB(customers);
     }

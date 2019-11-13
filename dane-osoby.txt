@@ -1,2 +1,3 @@
 name,surname,age,city,contacts.contact.0.contact_data,contacts.contact.0.type,contacts.contact.1.contact_data,contacts.contact.1.type
 Jan,Kowalski,24,Lublin,jkowal@gmail.com,1,777222333,2
+Wiesław,Michnikowski,98,Otwock,wiechu@wp.pl,1,135708611,2

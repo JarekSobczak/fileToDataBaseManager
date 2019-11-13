@@ -56,13 +56,16 @@ class CsvService {
                 if (!userContacts.containsKey(index)) {
                     Contact contact = new Contact();
                     userContacts.put(index, contact);
+
                 }
                 userContacts.get(index).update(fieldName, entry.getValue());
 
             }
+            Customer customer = new Customer(name, surname, age, city, new ArrayList<>(userContacts.values()));
+            customers.add(customer);
+            userContacts.clear();
         }
-        Customer customer = new Customer(name, surname, age, city, new ArrayList<>(userContacts.values()));
-        customers.add(customer);
+
     }
 }
 
