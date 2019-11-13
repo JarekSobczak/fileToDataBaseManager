@@ -1,0 +1,36 @@
+[
+{
+  "name": "Anna",
+  "surname": "Grudzińska",
+  "age": "11",
+  "city": "Biała Podlaska",
+  "contacts": [
+    {
+      "contact_data": "annaGrudzinska@gmail.com",
+      "type": "1"
+    },
+    {
+      "contact_data": "667994332",
+      "type": "2"
+    }
+  ]
+}
+,
+{
+  "name": "Antoni",
+  "surname": "Żuk",
+  "age": "18",
+  "city": "Parczew",
+  "contacts": [
+    {
+      "contact_data": "zuczek@gmail.com",
+      "type": "1"
+    },
+    {
+      "contact_data": "123123123",
+      "type": "2"
+    }
+  ]
+}
+]
+
